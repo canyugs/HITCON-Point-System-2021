@@ -49,7 +49,7 @@ const Schedule = () => {
         <Title>{langText("SCHEDULE_TITLE")}</Title>
         <Link href="https://hitcon.org/2021/agenda/" target="_blank">{langText("SCHEDULE_FULL_AGENDA")}</Link>
       </Wrapper>
-      {console.log(currentSessions["R0"])}
+
       <Program location="R0" title={currentSessions["R0"]?.[LANG].title} speaker={
         SessionInfo.speakers.filter(function (s) {
           return currentSessions["R0"]?.speakers.includes(s.id);
